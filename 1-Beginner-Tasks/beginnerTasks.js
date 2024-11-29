@@ -100,6 +100,150 @@ function logicalOperator(num, num1) {
     return "Try again";
   }
 }
-console.log(logicalOperator(5, 5));
-console.log(logicalOperator(8, 9));
-console.log(logicalOperator(8, 7));
+// console.log(logicalOperator(5, 5));
+// console.log(logicalOperator(8, 9));
+// console.log(logicalOperator(8, 7));
+
+/**
+  11. If-Else Statement
+    - Write an `if-else` block to check if a number is positive.
+ */
+
+function ifelse(num) {
+  if (num > 0) {
+    return (num = "positive");
+  } else {
+    return (num = "negative");
+  }
+}
+
+// console.log(ifelse(1));
+
+/**
+    12. Nested If Statements
+    - Create a program to determine if a number is positive, negative, or zero.
+ */
+function nestedIfElse(num) {
+  if (num > 0) {
+    return (num = "Positive");
+  } else if (num < 0) {
+    return (num = "Negative");
+  } else {
+    return (num = "zero");
+  }
+}
+// console.log(nestedIfElse(1));
+// console.log(nestedIfElse(-1));
+// console.log(nestedIfElse(0));
+
+/**
+    13. Switch Statement
+    - Write a switch statement to return the name of a day based on a number (1–7).
+ */
+
+let day = 3;
+day = 8;
+switch (day) {
+  case 1:
+    console.log("monday");
+    break;
+  case 2:
+    console.log("tuesday");
+    break;
+  case 3:
+    console.log("wednesday");
+    break;
+  case 4:
+    console.log("thursday");
+    break;
+  case 5:
+    console.log("friday");
+    break;
+  case 6:
+    console.log("saturday");
+    break;
+  case 7:
+    console.log("sunday");
+    break;
+  default:
+    console.log("Invalid day number. Please enter a number between 1 and 7.");
+}
+
+/**
+    14. For Loop
+    - Write a `for` loop that prints numbers from 1 to 10.
+ */
+// for (i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+/**
+    15. While Loop
+    - Create a program that prints numbers from 1 to 5 using a `while` loop.
+ */
+// let i = 0;
+// while (i < 5) {
+//   i++;
+//   console.log(i);
+// }
+
+/**
+    16. Do-While Loop
+    - Write a `do-while` loop to print numbers from 1 to 3.
+ */
+
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 3);
+
+/**
+    17. Break in Loop
+    - Write a loop that breaks when a number is divisible by 5.
+ */
+// for (i = 1; i <= 100; i++) {
+//   console.log(i);
+//   if (i % 5 === 0) {
+//     break;
+//   }
+// }
+
+/**
+    18. Continue in Loop
+    - Create a loop that skips even numbers.
+ */
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+/**
+    19. Nested Loops
+    - Write a program to print a multiplication table for numbers 1–3.
+ */
+
+// for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+//   console.log("");
+// }
+
+/**
+    20. FizzBuzz
+    - Write a program to print "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
+ */
+for (let i = 0; i <= 50; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
