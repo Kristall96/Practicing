@@ -236,14 +236,65 @@ switch (day) {
     20. FizzBuzz
     - Write a program to print "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
  */
-for (let i = 0; i <= 50; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
+// for (let i = 0; i <= 50; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+/**
+    21. Create a Function
+    - Define a function that logs "Hello!" to the console.
+ */
+
+function hello() {
+  console.log("hello");
 }
+hello();
+
+/**
+    22. Function with Parameters
+    - Write a function that takes two numbers and logs their sum.
+ */
+
+function numbers(a, b) {
+  console.log(a + b);
+}
+numbers(5, 10);
+
+/**
+    23. Return a Value
+    - Modify the above function to return the sum instead of logging it.
+ */
+function numberss(a, b) {
+  return a + b;
+}
+console.log(numberss(5, 7));
+
+/**
+  24. Arrow Function
+    - Convert a function to an arrow function.
+ */
+
+let hello1 = (a, b) => {
+  console.log(a + b);
+};
+
+hello1("hello", " World!");
+
+/**
+    25. Default Parameters
+    - Write a function with a default parameter.
+ */
+
+let hi = function hiya(a, b) {
+  return a + b;
+};
+
+console.log(hi(7, 10));
