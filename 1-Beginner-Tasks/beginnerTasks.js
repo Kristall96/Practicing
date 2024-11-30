@@ -293,7 +293,7 @@ hello1("hello", " World!");
     - Write a function with a default parameter.
  */
 
-let hi = function hiya(a, b) {
+let hi = function hiya(a, b = 0) {
   return a + b;
 };
 
