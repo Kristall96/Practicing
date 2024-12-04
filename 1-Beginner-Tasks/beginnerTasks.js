@@ -256,7 +256,7 @@ switch (day) {
 function hello() {
   console.log("hello");
 }
-hello();
+// hello();
 
 /**
     22. Function with Parameters
@@ -266,7 +266,7 @@ hello();
 function numbers(a, b) {
   console.log(a + b);
 }
-numbers(5, 10);
+// numbers(5, 10);
 
 /**
     23. Return a Value
@@ -275,18 +275,18 @@ numbers(5, 10);
 function numberss(a, b) {
   return a + b;
 }
-console.log(numberss(5, 7));
+// console.log(numberss(5, 7));
 
 /**
   24. Arrow Function
     - Convert a function to an arrow function.
  */
 
-let hello1 = (a, b) => {
-  console.log(a + b);
-};
+// let hello1 = (a, b) => {
+//   console.log(a + b);
+// };
 
-hello1("hello", " World!");
+// hello1("hello", " World!");
 
 /**
     25. Default Parameters
@@ -297,4 +297,71 @@ let hi = function hiya(a, b = 0) {
   return a + b;
 };
 
-console.log(hi(7, 10));
+// console.log(hi(7, 10));
+
+/**
+  26. Rest Parameter
+    - Use the rest parameter to sum any number of arguments.
+ */
+
+function rest(...nums) {
+  let total = 0;
+  for (const num of nums) {
+    total = total + num;
+  }
+  return total;
+}
+console.log(rest(1, 2, 4, 5));
+
+// function stringRest(a, b, ...rest) {
+//   console.log("A:", `${a},`, "B:", `${b},`, "rest:", ...rest);
+// }
+// stringRest("one", "two", "three", "four", "five", "six", "!");
+
+/**
+    27. Callback Function
+    - Write a function that accepts another function as an argument.
+ */
+
+// function firstFun(secondFun) {
+//   let name = "Erkan";
+//   console.log((name = `${name + " " + secondFun()}`));
+// }
+
+// function secondFun() {
+//   const lastName = "Shakir";
+//   return lastName;
+// }
+
+// firstFun(secondFun);
+
+/**
+    28. Anonymous Function
+    - Create an anonymous function and immediately invoke it.
+ */
+
+// (function () {
+//   console.log("hello");
+// })();
+
+/**
+  29. Recursion
+    - Write a function that calculates the factorial of a number using recursion.
+ */
+
+function recursion(num, acc = 1) {
+  if (num === 1) return acc;
+
+  return recursion(num - 1, acc * num);
+}
+// console.log(recursion(4));
+
+/**
+  30. Hoisting
+    - Experiment with function hoisting by calling a function before its declaration.
+ */
+// greeting("Bau", "Mau");
+
+function greeting(name, surname) {
+  return console.log(`${name} ${surname}`);
+}
