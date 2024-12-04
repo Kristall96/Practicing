@@ -365,3 +365,80 @@ function recursion(num, acc = 1) {
 function greeting(name, surname) {
   return console.log(`${name} ${surname}`);
 }
+
+/**
+  31. Create an Array
+    - Create an array of your favorite fruits.
+ */
+// let arr = ["apple", "orange", "banana"];
+// console.log(arr);
+
+/*
+  32. Access Array Elements
+    - Access and log the first element of an array.
+*/
+// console.log(arr[0]);
+
+/**
+  33. Update an Array
+    - Change the value of the second element in an array.
+ */
+
+// arr[1] = "cherry";
+// console.log(arr[1]);
+
+/**
+  34. Array Length
+    - Find and log the length of an array.
+ */
+// console.log(arr.length);
+/**
+  35. Push and Pop
+    - Add an item to the end of an array and remove it.
+ */
+
+// arr.push("Grape");
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+/**
+  36. Shift and Unshift
+    - Add an item to the beginning of an array and remove it.
+ */
+
+let arr = ["apple", "orange", "banana"];
+// arr.unshift("cherry"); // add array
+// console.log(arr);
+// arr.shift(); // remove array
+// console.log(arr);
+
+/**
+  37. Loop Through an Array
+    - Use a `for` loop to iterate through an array.
+ */
+for (const arrs of arr) {
+  console.log(arrs);
+}
+
+/**
+  38. Array Methods
+    - Use `.map()` to create a new array with the squares of the numbers in an array.
+ */
+let numArr = [1, 2, 3, 4];
+let numArr2 = numArr.map((num) => num ** 2);
+console.log(numArr2);
+
+/**
+  39. Filter
+    - Use `.filter()` to create an array of even numbers.
+ */
+let arrEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arrEven2 = arrEven.filter((even) => even % 2 === 0);
+// console.log(arrEven2);
+
+/**
+  40. Reduce
+    - Use `.reduce()` to find the sum of numbers in an array.
+ */
+let arrReduce = arrEven.reduce((acc, currVal) => acc + currVal, 0);
+console.log(arrReduce);
