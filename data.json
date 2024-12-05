@@ -1,0 +1,118 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "published_year": 1960,
+      "available": true,
+      "ratings": {
+        "average": 4.8,
+        "reviews": 4502
+      }
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "published_year": 1949,
+      "available": false,
+      "ratings": {
+        "average": 4.6,
+        "reviews": 3700
+      }
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "published_year": 1925,
+      "available": true,
+      "ratings": {
+        "average": 4.4,
+        "reviews": 2900
+      }
+    }
+  ],
+  "movies": [
+    {
+      "id": 101,
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "genre": "Sci-Fi",
+      "release_year": 2010,
+      "available": true,
+      "ratings": {
+        "average": 4.7,
+        "reviews": 2300
+      }
+    },
+    {
+      "id": 102,
+      "title": "The Matrix",
+      "director": "Wachowskis",
+      "genre": "Sci-Fi",
+      "release_year": 1999,
+      "available": false,
+      "ratings": {
+        "average": 4.8,
+        "reviews": 5400
+      }
+    },
+    {
+      "id": 103,
+      "title": "Titanic",
+      "director": "James Cameron",
+      "genre": "Romance",
+      "release_year": 1997,
+      "available": true,
+      "ratings": {
+        "average": 4.5,
+        "reviews": 3200
+      }
+    }
+  ],
+  "users": [
+    {
+      "user_id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "preferences": ["Sci-Fi", "Fiction"],
+      "membership_status": "active",
+      "borrowed_items": [
+        {
+          "type": "book",
+          "id": 1
+        },
+        {
+          "type": "movie",
+          "id": 102
+        }
+      ]
+    },
+    {
+      "user_id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "preferences": ["Romance", "Dystopian"],
+      "membership_status": "inactive",
+      "borrowed_items": []
+    },
+    {
+      "user_id": 3,
+      "name": "Alice Johnson",
+      "email": "alicej@example.com",
+      "preferences": ["Fiction", "Dystopian"],
+      "membership_status": "active",
+      "borrowed_items": [
+        {
+          "type": "book",
+          "id": 3
+        }
+      ]
+    }
+  ]
+}

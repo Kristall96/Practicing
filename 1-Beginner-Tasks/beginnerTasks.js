@@ -442,3 +442,77 @@ let arrEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  */
 let arrReduce = arrEven.reduce((acc, currVal) => acc + currVal, 0);
 console.log(arrReduce);
+
+/**
+  41. Create an Object
+    - Create an object representing a person with `name` and `age` properties.
+ */
+let person = {
+  name: "John",
+  age: 25,
+};
+
+/**
+  42. Access Object Properties
+    - Access and log the `name` property of an object.
+ */
+console.log(person.name);
+
+/**
+  43. Update Object
+    - Update the `age` property of an object.
+ */
+person.age = 30;
+console.log(person.age);
+
+/**
+  44. Add a Property
+    - Add a `hobby` property to an object.
+ */
+person.hobby = "Football";
+console.log(person.hobby);
+
+/**
+  45. Delete a Property
+    - Remove the `hobby` property from an object.
+ */
+delete person.hobby;
+console.log(person);
+
+/**
+  46. Loop Through an Object
+    - Use a `for...in` loop to log all properties of an object.
+ */
+for (const persons in person) {
+  if (Object.prototype.hasOwnProperty.call(person, persons)) {
+    const prop = person[persons];
+    console.log(`${persons} is ${prop}`);
+  }
+}
+/**
+  47. Object Methods
+    - Add a method to an object that logs a greeting.
+ */
+person.greet = () => console.log(`Hello, My name is ${person.name}`);
+person.greet();
+
+/**
+  48. Object Destructuring
+    - Use destructuring to extract properties from an object.
+ */
+let { name: personName, age: personAge } = person;
+console.log(personName, personAge);
+
+/**
+  49. Object.keys
+    - Get all keys of an object.
+ */
+let key = Object.keys(person);
+console.log(key);
+
+/**
+  50. Object.values
+    - Get all values of an object.
+ */
+let values = Object.values(person);
+console.log(values);
