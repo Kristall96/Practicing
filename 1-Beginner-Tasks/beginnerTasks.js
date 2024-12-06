@@ -552,14 +552,35 @@ h1.classList.toggle("true");
   56. Add an Event Listener
     - Add a click event listener to a button.
  */
+function handleClick() {
+  alert("hello");
+}
 let btn = document.querySelector("Button");
 btn.textContent = "button";
-btn.addEventListener("click", function click() {
-  alert("hello");
-});
+btn.addEventListener("click", handleClick);
 
 /**
   57. Remove an Event Listener
     - Remove a previously added event listener.
  */
-btn.removeEventListener("click", click);
+btn.removeEventListener("click", handleClick);
+
+/**
+  58. Create an Element
+    - Dynamically create a `div` element.
+ */
+
+let innderDiv = document.createElement("div");
+
+/**
+59. Append an Element
+    - Append a new element to the DOM.
+ */
+let div = document.getElementById("mainDiv");
+div.appendChild(innderDiv);
+
+/**
+60. Remove an Element
+    - Remove an element from the DOM.
+ */
+div.removeChild(innderDiv);
