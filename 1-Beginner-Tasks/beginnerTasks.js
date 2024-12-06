@@ -516,3 +516,50 @@ console.log(key);
  */
 let values = Object.values(person);
 console.log(values);
+
+/**
+  51. Select an Element
+    - Use `document.querySelector` to select an HTML element.
+ */
+let h1 = document.querySelector("H1");
+
+/**
+  52. Change Text
+    - Change the text of an HTML element.
+ */
+h1.innerHTML = "Hello";
+
+/**
+  53. Add a Class
+    - Add a class to an HTML element.
+ */
+
+h1.classList.add("divClass");
+
+/**
+  54. Remove a Class
+    - Remove a class from an HTML element.
+ */
+h1.classList.remove("divClass");
+
+/**
+  55. Toggle a Class
+    - Toggle a class on an HTML element.
+ */
+h1.classList.toggle("true");
+
+/**
+  56. Add an Event Listener
+    - Add a click event listener to a button.
+ */
+let btn = document.querySelector("Button");
+btn.textContent = "button";
+btn.addEventListener("click", function click() {
+  alert("hello");
+});
+
+/**
+  57. Remove an Event Listener
+    - Remove a previously added event listener.
+ */
+btn.removeEventListener("click", click);
